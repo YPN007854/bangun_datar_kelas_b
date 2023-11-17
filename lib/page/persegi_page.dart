@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class PersegiPage extends StatelessWidget {
-   PersegiPage({super.key});
-final Persegicontroller _persegicontroller= Get.put(Persegicontroller());
+  PersegiPage({super.key});
+  final Persegicontroller _persegicontroller= Get.put(Persegicontroller());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,10 @@ final Persegicontroller _persegicontroller= Get.put(Persegicontroller());
               style: TextStyle(color: Colors.yellow),
             ),
           ),
-          Padding(
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.green.shade300,borderRadius: BorderRadius.all(Radius.circular(10))
+            ),
             padding: const EdgeInsets.all(8.0),
             child: Text(
                 "Persegi panjang (bahasa Inggris: rectangle) adalah bangun datar dua dimensi yang dibentuk oleh dua pasang sisi yang masing-masing sama panjang dan sejajar dengan pasangannya, dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku."),
